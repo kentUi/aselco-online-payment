@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React + TS</title>
+  <link rel="stylesheet" href="/assets/css/dashlite.css?ver=3.0.3">
+  <link id="skin-default" rel="stylesheet" href="/assets/css/theme.css?ver=3.0.3">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    .is-light .nk-menu-link:hover,
+    .is-light .active>.nk-menu-link {
+      background: #207B25;
+      color: #fff;
+    }
+
+    .nk-menu-link:hover .nk-menu-icon,
+    .nk-menu-item.active>.nk-menu-link .nk-menu-icon,
+    .nk-menu-item.current-menu>.nk-menu-link .nk-menu-icon {
+      color: #fff;
+    }
+
+    .is-light .nk-menu-link {
+      color: #1f2b3a;
+    }
+
+    .nk-menu-icon {
+      color: #1f2b3a;
+    }
+
+
+    .custom-checkbox {
+      appearance: none;
+      /* Hide the default checkbox appearance */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 20px;
+      /* Adjust the size of the custom checkbox */
+      height: 20px;
+      border: 2px solid lightgray;
+      /* Add a border */
+      border-radius: 3px;
+      /* Optional: Add border radius for rounded corners */
+      position: relative;
+      cursor: pointer;
+    }
+
+    .custom-checkbox::before {
+      content: '\2713';
+      /* Unicode for checkmark symbol */
+      color: green;
+      /* Change the color of the checkmark */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      /* Adjust the size of the checkmark */
+      visibility: hidden;
+    }
+
+    .custom-checkbox:checked::before {
+      visibility: visible;
+      /* Show the checkmark when the checkbox is checked */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script src="/assets/js/bundle.js?ver=3.0.3"></script>
+  <script src="/assets/js/scripts.js?ver=3.0.3"></script>
+</body>
+
+</html>
