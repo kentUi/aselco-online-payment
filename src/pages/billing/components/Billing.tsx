@@ -74,7 +74,7 @@ function BillingComponents() {
                 showCancelButton: true,
                 confirmButtonColor: "#3085d6",
                 cancelButtonColor: "#d33",
-                confirmButtonText: "Yes, delete it!"
+                confirmButtonText: "Yes, Send it!"
             }).then((result) => {
                 if (result.isConfirmed) {
 
@@ -103,8 +103,9 @@ function BillingComponents() {
                                     icon: "success",
                                     willClose: () => {
                                         clearInterval(timerInterval);
-                                        getChecked(0)
-                                        check_billing();
+                                        window.location.reload()
+                                        // getChecked(0)
+                                        // check_billing();
                                     }
                                 });
                             });

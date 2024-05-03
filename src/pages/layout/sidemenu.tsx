@@ -28,19 +28,25 @@ function Sidemenu() {
                 <h6 className="overline-title text-primary-alt">menu</h6>
               </li>
               <li className="nk-menu-item">
-                <a href="/" className="nk-menu-link">
+                <a href="/dashboard" className="nk-menu-link">
                   <span className="nk-menu-icon"><em className="icon ni ni-dashboard"></em></span>
                   <span className="nk-menu-text">Costumer Billing</span>
                 </a>
               </li>
               <li className="nk-menu-item">
-                <a href="/student/search" className="nk-menu-link">
+                <a href="/copy" className="nk-menu-link">
+                  <span className="nk-menu-icon"><em className="icon ni ni-history"></em></span>
+                  <span className="nk-menu-text">Costumer Billing Logs</span>
+                </a>
+              </li>
+              <li className="nk-menu-item">
+                <a href="/incoming" className="nk-menu-link">
                   <span className="nk-menu-icon"><em className="icon ni ni-money"></em></span>
                   <span className="nk-menu-text">Incomming Payments</span>
                 </a>
               </li>
               <li className="nk-menu-item">
-                <a href="/archive" className="nk-menu-link">
+                <a href="/developer" className="nk-menu-link">
                   <span className="nk-menu-icon"><em className="icon ni ni-code"></em></span>
                   <span className="nk-menu-text">Developer Mode</span>
                 </a>
